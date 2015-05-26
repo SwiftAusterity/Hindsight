@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="918ab7d6-157d-40d7-8bfa-1ed3218af836" ChangeDateTime="04/18/2014 13:26:14">
+    <Property Name="ElementName" Value="[dbo].[Arc].[AncestorArc]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Arc]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="AncestorArcID" />
+  </Operation>
+</Operations>

@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[Pathway]
+(
+	[Id] BIGINT NOT NULL PRIMARY KEY IDENTITY, 
+    [Key] UNIQUEIDENTIFIER NOT NULL, 
+    [Order] INT NOT NULL DEFAULT 1, 
+    [Created] DATETIME NOT NULL DEFAULT GetUTCDate(), 
+    [ArcID] BIGINT NOT NULL, 
+    [StanzaID] BIGINT NOT NULL, 
+    [ChoiceID] BIGINT NULL, 
+    [Age] INT NOT NULL, 
+    [CurrentStatus] VARCHAR(MAX) NOT NULL
+)

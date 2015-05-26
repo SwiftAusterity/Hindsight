@@ -1,0 +1,4 @@
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Logging\bin\Debug\Logging.dll
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Logging\bin\Debug\Logging.pdb
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Logging\obj\Debug\Logging.dll
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Logging\obj\Debug\Logging.pdb

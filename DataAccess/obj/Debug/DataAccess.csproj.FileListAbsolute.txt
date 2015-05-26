@@ -1,0 +1,12 @@
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\bin\Debug\Logging.dll
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\bin\Debug\Logging.pdb
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\obj\Debug\DataAccess.pdb

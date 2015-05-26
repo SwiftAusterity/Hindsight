@@ -1,0 +1,9 @@
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\bin\Debug\Data.dacpac
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\bin\Debug\Data.dll
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\bin\Debug\Data.pdb
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\Model.xml
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\refactor.xml
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\postdeploy.sql
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\predeploy.sql
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\Data.dll
+C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\Data.pdb

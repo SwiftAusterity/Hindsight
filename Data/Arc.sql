@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Arc]
+(
+	[Id] BIGINT NOT NULL PRIMARY KEY IDENTITY, 
+	[StoryID] BIGINT NOT NULL,
+    [Key] UNIQUEIDENTIFIER NOT NULL, 
+    [StartingPathwayID] BIGINT NOT NULL, 
+    [AncestorArcID] BIGINT NOT NULL, 
+	[Status] VARCHAR(MAX) NOT NULL, 
+    [Created] DATETIME NOT NULL DEFAULT GetUTCDate(), 
+    [Archived] DATETIME NULL
+)
