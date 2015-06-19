@@ -1,2 +1,4 @@
-Divergence.v11.suo
-Divergence.v12.suo
+*.suo
+*.user
+bin/
+obj/
