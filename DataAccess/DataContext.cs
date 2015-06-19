@@ -130,10 +130,10 @@ namespace DataAccess
                         .HasMany<StatusComparison>(f => f.StatusComparisons);
 
             //StatusValue
-            modelBuilder.Entity<StatusValue>()
-                        .HasMany<StatusComparison>(f => f.StatusComparisons)
-                        .WithRequired(s => s.StatusType);
+            modelBuilder.Entity<StatusComparison>()
+                        .HasOptional<StatusValue>(f => f.StatusType);
 
+            //StatusValue
             modelBuilder.Entity<StatusValue>()
                         .HasOptional<StatusValue>(f => f.CollapsedTo);
 

@@ -10,12 +10,12 @@ namespace Divergence.ViewModels
     #region Stanzas
     public class StanzaList
     {
-        public IEnumerable<Stanza> Stanzas { get; set; }
+        public ICollection<Stanza> Stanzas { get; set; }
     }
 
     public class AddStanza
     {
-        public IEnumerable<Choice> AvailableChoices { get; set; }
+        public ICollection<Choice> AvailableChoices { get; set; }
 
         [Required]
         [Range(0, 100)]
@@ -37,7 +37,7 @@ namespace Divergence.ViewModels
 
     public class EditStanza
     {
-        public IEnumerable<Choice> AvailableChoices { get; set; }
+        public ICollection<Choice> AvailableChoices { get; set; }
 
         [Required]
         [Range(0, 100)]
@@ -56,7 +56,7 @@ namespace Divergence.ViewModels
     #region Choice
     public class ChoiceList
     {
-        public IEnumerable<Choice> Choices { get; set; }
+        public ICollection<Choice> Choices { get; set; }
     }
 
     public class AddChoice

@@ -10,3 +10,15 @@ C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess
 C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
 C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\DataAccess\obj\Debug\DataAccess.pdb
+E:\Development\Hindsight\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+E:\Development\Hindsight\DataAccess\bin\Debug\DataAccess.dll.config
+E:\Development\Hindsight\DataAccess\bin\Debug\DataAccess.dll
+E:\Development\Hindsight\DataAccess\bin\Debug\DataAccess.pdb
+E:\Development\Hindsight\DataAccess\bin\Debug\EntityFramework.dll
+E:\Development\Hindsight\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+E:\Development\Hindsight\DataAccess\bin\Debug\Logging.dll
+E:\Development\Hindsight\DataAccess\bin\Debug\Logging.pdb
+E:\Development\Hindsight\DataAccess\bin\Debug\EntityFramework.xml
+E:\Development\Hindsight\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+E:\Development\Hindsight\DataAccess\obj\Debug\DataAccess.dll
+E:\Development\Hindsight\DataAccess\obj\Debug\DataAccess.pdb

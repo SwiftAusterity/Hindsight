@@ -33,17 +33,17 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// The changes to status that this choice imposes
         /// </summary>
-        public IEnumerable<StatusChanges> StatusChangeses { get; set; }
+        public ICollection<StatusChanges> StatusChangeses { get; set; }
 
         /// <summary>
         /// The stanzas this belongs to
         /// </summary>
-        public IEnumerable<Stanza> Stanzas { get; set; }
+        public ICollection<Stanza> Stanzas { get; set; }
 
         /// <summary>
         /// The tags associated with this stanza
         /// </summary>
-        public IEnumerable<Tag> Tags { get; set; }
+        public ICollection<Tag> Tags { get; set; }
 
         /// <summary>
         /// Who created this
@@ -55,7 +55,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="tag">the tag to append</param>
         /// <returns>All the tags associated with this</returns>
-        public IEnumerable<Tag> AddTag(Tag tag)
+        public ICollection<Tag> AddTag(Tag tag)
         {
             //Don't add stuff we already have
             if (Tags.Any(t => t.Equals(tag)))
@@ -75,7 +75,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="tag">the tag to remove</param>
         /// <returns>The new list of tags</returns>
-        public IEnumerable<Tag> RemoveTag(Tag tag)
+        public ICollection<Tag> RemoveTag(Tag tag)
         {
             //Don't remove stuff we don't have
             if (!Tags.Any(t => t.Equals(tag)))
@@ -95,7 +95,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="stanza">the stanza to associate</param>
         /// <returns>all the associated stanzas</returns>
-        public IEnumerable<Stanza> AddStanza(Stanza stanza)
+        public ICollection<Stanza> AddStanza(Stanza stanza)
         {
             //Don't add stuff we already have
             if (Stanzas.Any(s => s.Equals(stanza)))
@@ -118,9 +118,9 @@ namespace Divergence.DataAccess.DataClasses
         /// <param name="stanzas">Stanzas this belongs to</param>
         /// <param name="creator">The user creating this</param>
         /// <returns>the new data</returns>
-        public static Choice Create(IEnumerable<StatusChanges> statusChanges, string text, Stanza stanza, UserProfile creator)
+        public static Choice Create(ICollection<StatusChanges> statusChanges, string text, Stanza stanza, UserProfile creator)
         {
-            return Create(statusChanges, text, stanza, creator, Enumerable.Empty<Tag>());
+            return Create(statusChanges, text, stanza, creator, Enumerable.Empty<Tag>().ToArray());
         }
 
         /// <summary>
@@ -132,7 +132,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <param name="creator">The user creating this</param>
         /// <param name="tags">The tags to apply to this</param>
         /// <returns>the new data</returns>
-        public static Choice Create(IEnumerable<StatusChanges> statusChanges, string text, Stanza stanza, UserProfile creator, IEnumerable<Tag> tags)
+        public static Choice Create(ICollection<StatusChanges> statusChanges, string text, Stanza stanza, UserProfile creator, ICollection<Tag> tags)
         {
             //No null creators
             if (creator == null)

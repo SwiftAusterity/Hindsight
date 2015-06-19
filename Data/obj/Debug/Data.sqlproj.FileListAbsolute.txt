@@ -7,3 +7,12 @@ C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\D
 C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\predeploy.sql
 C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\Data.dll
 C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\Data.pdb
+E:\Development\Hindsight\Data\bin\Debug\Data.dacpac
+E:\Development\Hindsight\Data\bin\Debug\Data.dll
+E:\Development\Hindsight\Data\bin\Debug\Data.pdb
+E:\Development\Hindsight\Data\obj\Debug\Model.xml
+E:\Development\Hindsight\Data\obj\Debug\refactor.xml
+E:\Development\Hindsight\Data\obj\Debug\postdeploy.sql
+E:\Development\Hindsight\Data\obj\Debug\predeploy.sql
+E:\Development\Hindsight\Data\obj\Debug\Data.dll
+E:\Development\Hindsight\Data\obj\Debug\Data.pdb

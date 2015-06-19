@@ -12,7 +12,7 @@
 		</CustomData>
 		<CustomData Category="Reference" Type="Assembly">
 			<Metadata Name="LogicalName" Value="Data.dll" />
-			<Metadata Name="FileName" Value="C:\USERS\DNISSENFELD\DOCUMENTS\VISUAL STUDIO 2012\PROJECTS\DIVERGENCE\DATA\OBJ\DEBUG\DATA.DLL" />
+			<Metadata Name="FileName" Value="E:\DEVELOPMENT\HINDSIGHT\DATA\OBJ\DEBUG\DATA.DLL" />
 			<Metadata Name="AssemblyName" Value="Data" />
 			<Metadata Name="PermissionSet" Value="SAFE" />
 			<Metadata Name="Owner" Value="" />
@@ -20,7 +20,7 @@
 			<Metadata Name="IsVisible" Value="True" />
 			<Metadata Name="IsModelAware" Value="True" />
 			<Metadata Name="SkipCreationIfEmpty" Value="True" />
-			<Metadata Name="AssemblySymbolsName" Value="C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Data\obj\Debug\Data.pdb" />
+			<Metadata Name="AssemblySymbolsName" Value="E:\Development\Hindsight\Data\obj\Debug\Data.pdb" />
 		</CustomData>
 		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
 	</Header>

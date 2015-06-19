@@ -16,7 +16,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// List of status logics
         /// </summary>
-        public IEnumerable<StatusComparison> StatusComparisons { get; set; }
+        public ICollection<StatusComparison> StatusComparisons { get; set; }
 
         /// <summary>
         /// Validate StatusLogic against a single status value

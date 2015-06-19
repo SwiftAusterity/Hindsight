@@ -57,18 +57,18 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// All the arcs in this story
         /// </summary>
-        public IEnumerable<Arc> Arcs { get; set; }
+        public ICollection<Arc> Arcs { get; set; }
 
         /// <summary>
         /// Tags associated with this story
         /// </summary>
-        public IEnumerable<Tag> Tags { get; set; }
+        public ICollection<Tag> Tags { get; set; }
 
         /// <summary>
         /// All the tags in this story and all children
         /// </summary>
         [NotMapped]
-        public IEnumerable<Tag> TagFamily
+        public ICollection<Tag> TagFamily
         {
             get
             {
@@ -119,7 +119,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="tag">the tag to append</param>
         /// <returns>All the tags associated with this</returns>
-        public IEnumerable<Tag> AddTag(Tag tag)
+        public ICollection<Tag> AddTag(Tag tag)
         {
             //Don't add stuff we already have
             if (Tags.Any(t => t.Equals(tag)))
@@ -139,7 +139,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="tag">the tag to remove</param>
         /// <returns>The new list of tags</returns>
-        public IEnumerable<Tag> RemoveTag(Tag tag)
+        public ICollection<Tag> RemoveTag(Tag tag)
         {
             //Don't remove stuff we don't have
             if (!Tags.Any(t => t.Equals(tag)))
@@ -163,7 +163,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <returns>the new story object</returns>
         public Story Create(string name, string protagonistName, string protagonistGender)
         {
-            return Create(name, protagonistName, protagonistGender, Enumerable.Empty<Tag>());
+            return Create(name, protagonistName, protagonistGender, Enumerable.Empty<Tag>().ToArray());
         }
 
         /// <summary>
@@ -174,7 +174,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <param name="protagonistGender">the protagonist's gender</param>
         /// <param name="tags">The tags to apply to the story</param>
         /// <returns>the new story object</returns>
-        public Story Create(string name, string protagonistName, string protagonistGender, IEnumerable<Tag> tags)
+        public Story Create(string name, string protagonistName, string protagonistGender, ICollection<Tag> tags)
         {
             //Generate the new key
             var key = Guid.NewGuid();

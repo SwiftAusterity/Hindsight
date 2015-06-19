@@ -31,7 +31,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="logics">The logic block</param>
         /// <returns>true or false</returns>
-        public bool Validate(IEnumerable<StatusLogic> logics)
+        public bool Validate(ICollection<StatusLogic> logics)
         {
             foreach(var value in StatusValues)
             {

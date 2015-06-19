@@ -43,23 +43,23 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// The logic statements that determine if this stanza qualifies for the current pathway plot pool
         /// </summary>
-        public IEnumerable<StatusLogic> StatusLogics { get; set; }
+        public ICollection<StatusLogic> StatusLogics { get; set; }
 
         /// <summary>
         /// The choices attached to this stanza
         /// </summary>
-        public IEnumerable<Choice> Choices { get; set; }
+        public ICollection<Choice> Choices { get; set; }
 
         /// <summary>
         /// The tags associated with this stanza
         /// </summary>
-        public IEnumerable<Tag> Tags { get; set; }
+        public ICollection<Tag> Tags { get; set; }
 
         /// <summary>
         /// All the tags in this and all children
         /// </summary>
         [NotMapped]
-        public IEnumerable<Tag> TagFamily
+        public ICollection<Tag> TagFamily
         {
             get
             {
@@ -86,7 +86,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="choice">the new choice</param>
         /// <returns>the new list of choices</returns>
-        public IEnumerable<Choice> AddChoice(Choice choice)
+        public ICollection<Choice> AddChoice(Choice choice)
         {
             //Don't add stuff we already have
             if (Choices.Any(c => c.Equals(choice)))
@@ -106,7 +106,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="tag">the tag to append</param>
         /// <returns>All the tags associated with this</returns>
-        public IEnumerable<Tag> AddTag(Tag tag)
+        public ICollection<Tag> AddTag(Tag tag)
         {
             //Don't add stuff we already have
             if (Tags.Any(t => t.Equals(tag)))
@@ -126,7 +126,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="tag">the tag to remove</param>
         /// <returns>The new list of tags</returns>
-        public IEnumerable<Tag> RemoveTag(Tag tag)
+        public ICollection<Tag> RemoveTag(Tag tag)
         {
             //Don't remove stuff we don't have
             if (!Tags.Any(t => t.Equals(tag)))
@@ -150,9 +150,9 @@ namespace Divergence.DataAccess.DataClasses
         /// <param name="logic">block of logic statements to validate grabbing one of these</param>
         /// <param name="creator">creator of this</param>
         /// <returns>the new data</returns>
-        public static Stanza Create(int minAge, int maxAge, string description, IEnumerable<StatusLogic> logic, UserProfile creator)
+        public static Stanza Create(int minAge, int maxAge, string description, ICollection<StatusLogic> logic, UserProfile creator)
         {
-            return Create(minAge, maxAge, description, logic, creator, Enumerable.Empty<Tag>(), Origin.Private);
+            return Create(minAge, maxAge, description, logic, creator, Enumerable.Empty<Tag>().ToArray(), Origin.Private);
         }
 
         /// <summary>
@@ -165,7 +165,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <param name="creator">creator of this</param>
         /// <param name="tags">the tags to associate with this</param>
         /// <returns>the new data</returns>
-        public static Stanza Create(int minAge, int maxAge, string description, IEnumerable<StatusLogic> logic, UserProfile creator, IEnumerable<Tag> tags)
+        public static Stanza Create(int minAge, int maxAge, string description, ICollection<StatusLogic> logic, UserProfile creator, ICollection<Tag> tags)
         {
             return Create(minAge, maxAge, description, logic, creator, tags, Origin.Private);
         }
@@ -180,9 +180,9 @@ namespace Divergence.DataAccess.DataClasses
         /// <param name="creator">creator of this</param>
         /// <param name="type">the origin type</param>
         /// <returns>the new data</returns>
-        public static Stanza Create(int minAge, int maxAge, string description, IEnumerable<StatusLogic> logic, UserProfile creator,  Origin type)
+        public static Stanza Create(int minAge, int maxAge, string description, ICollection<StatusLogic> logic, UserProfile creator,  Origin type)
         {
-            return Create(minAge, maxAge, description, logic, creator, Enumerable.Empty<Tag>(), type);
+            return Create(minAge, maxAge, description, logic, creator, Enumerable.Empty<Tag>().ToArray(), type);
         }
 
         /// <summary>
@@ -196,7 +196,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <param name="tags">the tags to associate with this</param>
         /// <param name="type">the origin type</param>
         /// <returns>the new data</returns>
-        public static Stanza Create(int minAge, int maxAge, string description, IEnumerable<StatusLogic> logic, UserProfile creator, IEnumerable<Tag> tags, Origin type)
+        public static Stanza Create(int minAge, int maxAge, string description, ICollection<StatusLogic> logic, UserProfile creator, ICollection<Tag> tags, Origin type)
         {
             //No null creators
             if (creator == null)

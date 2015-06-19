@@ -247,7 +247,7 @@ CREATE TABLE [dbo].[Story] (
 
 
 GO
-PRINT N'Creating Default Constraint on [dbo].[Stanza]....';
+PRINT N'Creating unnamed constraint on [dbo].[Stanza]...';
 
 
 GO
@@ -256,7 +256,7 @@ ALTER TABLE [dbo].[Stanza]
 
 
 GO
-PRINT N'Creating Default Constraint on [dbo].[Stanza]....';
+PRINT N'Creating unnamed constraint on [dbo].[Stanza]...';
 
 
 GO
@@ -265,7 +265,7 @@ ALTER TABLE [dbo].[Stanza]
 
 
 GO
-PRINT N'Creating Default Constraint on [dbo].[Pathway]....';
+PRINT N'Creating unnamed constraint on [dbo].[Pathway]...';
 
 
 GO
@@ -274,7 +274,7 @@ ALTER TABLE [dbo].[Pathway]
 
 
 GO
-PRINT N'Creating Default Constraint on [dbo].[Pathway]....';
+PRINT N'Creating unnamed constraint on [dbo].[Pathway]...';
 
 
 GO
@@ -283,7 +283,7 @@ ALTER TABLE [dbo].[Pathway]
 
 
 GO
-PRINT N'Creating Default Constraint on [dbo].[Arc]....';
+PRINT N'Creating unnamed constraint on [dbo].[Arc]...';
 
 
 GO
@@ -292,7 +292,7 @@ ALTER TABLE [dbo].[Arc]
 
 
 GO
-PRINT N'Creating Default Constraint on [dbo].[Story]....';
+PRINT N'Creating unnamed constraint on [dbo].[Story]...';
 
 
 GO

@@ -36,7 +36,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// Pathways under this arc
         /// </summary>
-        public IEnumerable<Pathway> Pathways { get; set; }
+        public ICollection<Pathway> Pathways { get; set; }
 
         /// <summary>
         /// The arc this one was forked from
@@ -116,7 +116,7 @@ namespace Divergence.DataAccess.DataClasses
         /// </summary>
         /// <param name="pathway">the pathway to add</param>
         /// <returns>The new list</returns>
-        public IEnumerable<Pathway> AddPathway(Pathway pathway)
+        public ICollection<Pathway> AddPathway(Pathway pathway)
         {
             //Don't add stuff we already have
             if (Pathways.Any(p => p.Order.Equals(pathway.Order) || p.Equals(pathway)))

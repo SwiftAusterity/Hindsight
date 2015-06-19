@@ -2,3 +2,7 @@ C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Logging\bi
 C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Logging\bin\Debug\Logging.pdb
 C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Logging\obj\Debug\Logging.dll
 C:\Users\dnissenfeld\Documents\Visual Studio 2012\Projects\Divergence\Logging\obj\Debug\Logging.pdb
+E:\Development\Hindsight\Logging\bin\Debug\Logging.dll
+E:\Development\Hindsight\Logging\bin\Debug\Logging.pdb
+E:\Development\Hindsight\Logging\obj\Debug\Logging.dll
+E:\Development\Hindsight\Logging\obj\Debug\Logging.pdb

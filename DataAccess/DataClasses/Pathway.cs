@@ -77,7 +77,7 @@ namespace Divergence.DataAccess.DataClasses
         /// All the tags in all children
         /// </summary>
         [NotMapped]
-        public IEnumerable<Tag> TagFamily
+        public ICollection<Tag> TagFamily
         {
             get
             {
