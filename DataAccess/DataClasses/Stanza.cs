@@ -43,7 +43,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// The logic statements that determine if this stanza qualifies for the current pathway plot pool
         /// </summary>
-        public IEnumerable<StatusLogic> StatusLogic { get; set; }
+        public IEnumerable<StatusLogic> StatusLogics { get; set; }
 
         /// <summary>
         /// The choices attached to this stanza
@@ -58,6 +58,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// All the tags in this and all children
         /// </summary>
+        [NotMapped]
         public IEnumerable<Tag> TagFamily
         {
             get
@@ -206,7 +207,7 @@ namespace Divergence.DataAccess.DataClasses
                 MinimumAge = minAge,
                 MaximumAge = maxAge,
                 Text = description,
-                StatusLogic = logic,
+                StatusLogics = logic,
                 Creator = creator,
                 Tags = tags,
                 Type = type
@@ -238,7 +239,7 @@ namespace Divergence.DataAccess.DataClasses
             Stanza returnValue = null;
 
             //Deny stanzas by age first of all
-            var availableStanzas = db.Stanzas.Where(stz => stz.MinimumAge <= age && stz.MaximumAge >= age && status.Validate(stz.StatusLogic));
+            var availableStanzas = db.Stanzas.Where(stz => stz.MinimumAge <= age && stz.MaximumAge >= age && status.Validate(stz.StatusLogics));
 
             if(availableStanzas.Count() > 1)
                 returnValue = availableStanzas.OrderBy(stz => rand.Next(availableStanzas.Count() - 1)).FirstOrDefault();

@@ -28,6 +28,51 @@ namespace Divergence.DataAccess.DataClasses
         public string UserName { get; set; }
 
         /// <summary>
+        /// Arcs this user has participated in
+        /// </summary>
+        public ICollection<Arc> Arcs { get; set; }
+
+        /// <summary>
+        /// Choices this user has created
+        /// </summary>
+        public ICollection<Choice> Choices { get; set; }
+
+        /// <summary>
+        /// Stanzas this user has created
+        /// </summary>
+        public ICollection<Stanza> Stanzas { get; set; }
+
+        /// <summary>
+        /// Tags this user has created
+        /// </summary>
+        public ICollection<Tag> Tags { get; set; }
+
+        /// <summary>
+        /// Tags this user has taken
+        /// </summary>
+        public ICollection<Pathway> Pathways { get; set; }
+
+        /// <summary>
+        /// Genders this user has created
+        /// </summary>
+        public ICollection<ProtagonistGender> ProtagonistGenders { get; set; }
+
+        /// <summary>
+        /// Protagonist Names this user has created
+        /// </summary>
+        public ICollection<ProtagonistName> ProtagonistNames { get; set; }
+
+        /// <summary>
+        /// Status Values this user has created
+        /// </summary>
+        public ICollection<StatusValue> StatusValues { get; set; }
+
+        /// <summary>
+        /// Story Names this user has created
+        /// </summary>
+        public ICollection<StoryName> StoryNames { get; set; }
+
+        /// <summary>
         /// Compare two users
         /// </summary>
         /// <param name="obj">Must be an UserProfile</param>

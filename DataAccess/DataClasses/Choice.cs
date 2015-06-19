@@ -33,7 +33,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// The changes to status that this choice imposes
         /// </summary>
-        public IEnumerable<StatusChanges> StatusChanges { get; set; }
+        public IEnumerable<StatusChanges> StatusChangeses { get; set; }
 
         /// <summary>
         /// The stanzas this belongs to
@@ -143,7 +143,7 @@ namespace Divergence.DataAccess.DataClasses
 
             var returnValue = new Choice
             {
-                StatusChanges = statusChanges,
+                StatusChangeses = statusChanges,
                 Text = text,
                 Stanzas = stanzas,
                 Creator = creator,
@@ -173,7 +173,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <returns>Fluent design, the status results</returns>
         public PlotStatus AppendStatus(PlotStatus status)
         {
-            foreach (var change in StatusChanges)
+            foreach (var change in StatusChangeses)
             {
                 var key = change.StatusType;
 

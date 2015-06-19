@@ -21,7 +21,7 @@ namespace Divergence
             );
 
             routes.MapRoute(
-                name: "Pathway Default with optional key",
+                name: "Pathway Default with no key",
                 url: "Arc/{arcKey}/Pathway",
                 defaults: new { controller = "Pathway", action = "Graph" }
             );

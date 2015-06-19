@@ -22,6 +22,7 @@ namespace Divergence.DataAccess.DataClasses
         /// The DB PrimaryKey
         /// </summary>
         [Key]
+        [Column(Order = 1)] 
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public long Id { get; private set; }
 
@@ -29,6 +30,7 @@ namespace Divergence.DataAccess.DataClasses
         /// Guid "friendly key"
         /// </summary>
         [Key]
+        [Column(Order = 2)] 
         public Guid Key { get; private set; }
 
         /// <summary>
@@ -74,6 +76,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// All the tags in all children
         /// </summary>
+        [NotMapped]
         public IEnumerable<Tag> TagFamily
         {
             get
@@ -91,6 +94,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// Remaining choices available to be chosen
         /// </summary>
+        [NotMapped]
         public IEnumerable<Choice> LockedChoices
         {
             get
@@ -102,6 +106,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// Remaining choices available to be chosen
         /// </summary>
+        [NotMapped]
         public IEnumerable<Choice> AvailableChoices
         {
             get

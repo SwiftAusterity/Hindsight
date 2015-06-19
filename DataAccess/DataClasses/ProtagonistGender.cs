@@ -63,6 +63,7 @@ namespace Divergence.DataAccess.DataClasses
         /// <summary>
         /// Is this archived
         /// </summary>
+        [NotMapped]
         public bool IsArchived
         {
             get
